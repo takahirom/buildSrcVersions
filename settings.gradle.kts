@@ -9,7 +9,7 @@ pluginManagement {
         eachPlugin {
             Config.pluginsResolution[requested.id.id]?.let { classpathForRequestedPlugin ->
                 useModule(classpathForRequestedPlugin)
-            }
+            } ?: println("Plugin: " + requested.id.id)
         }
     }
 }

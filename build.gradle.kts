@@ -8,6 +8,7 @@ buildscript {
     }
     dependencies {
         classpath(Libs.com_android_tools_build_gradle)
+        classpath(Libs.org_jetbrains_kotlin_jvm_gradle_plugin)
     }
 }
 

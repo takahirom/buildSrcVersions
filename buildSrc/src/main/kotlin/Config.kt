@@ -2,7 +2,11 @@
 object Config {
     // Map of Gradle plugins: Classpath to ("id1", "id2", ...)
     val gradlePluginsDependencies = mapOf(
-        Libs.com_android_tools_build_gradle to listOf("com.android.application", "com.android.library")
+        Libs.com_android_tools_build_gradle to listOf("com.android.application", "com.android.library"),
+        Libs.org_jetbrains_kotlin_jvm_gradle_plugin to listOf(
+            "kotlin", "org.jetbrains.kotlin.android",
+            "org.jetbrains.kotlin.jvm", "org.jetbrains.kotlin.kapt"
+        )
     )
 
     /**
