@@ -4,9 +4,10 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        // Kotlin, Android, ......
+        classpath(Libs.com_android_tools_build_gradle)
     }
 }
 
@@ -15,9 +16,6 @@ plugins {
     id("com.gradle.build-scan") version "2.0.2"
     id("jmfayard.github.io.gradle-kotlin-dsl-libs") version "0.2.6"
     id("org.jlleitschuh.gradle.ktlint") version "6.3.0" apply (false)
-}
-repositories {
-    jcenter()
 }
 
 
@@ -33,13 +31,6 @@ allprojects {
     tasks.withType<KotlinCompile> {
         kotlinOptions.jvmTarget = "1.8"
     }
-
-    apply(plugin = "java")
-    java {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
 }
 
 
@@ -49,7 +40,7 @@ buildScan {
     publishAlways()
 }
 
-//tasks.withType<Wrapper> {
-//    distributionType = Wrapper.DistributionType.ALL
-//    gradleVersion = Versions.Gradle.currentVersion
-//}
+tasks.withType<Wrapper> {
+    distributionType = Wrapper.DistributionType.ALL
+    gradleVersion = Versions.Gradle.currentVersion
+}

@@ -5,14 +5,13 @@ pluginManagement {
         google()
     }
 
-    val Plugins = mapOf("" to "")
     resolutionStrategy {
         eachPlugin {
-            if (Plugins.containsKey(requested.id.id)) {
-                useModule(Plugins[requested.id.id]!!)
+            Config.pluginsResolution[requested.id.id]?.let { classpathForRequestedPlugin ->
+                useModule(classpathForRequestedPlugin)
             }
         }
     }
 }
-rootProject.name = "gradle-kotlin-dsl-libs"
-include(":plugin", ":examples:kotlin", ":examples:groovy", ":examples.android")
+rootProject.name = "buildSrdVersions"
+include(":plugin", ":examples:kotlin", ":examples:groovy", ":examples:android")

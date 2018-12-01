@@ -7,6 +7,9 @@ import kotlin.String
  *   `$ ./gradlew syncLibs`
  * to update this file */
 object Libs {
+    const val com_android_tools_build_gradle: String =
+        "com.android.tools.build:gradle:3.2.1"
+
     /**
      * [gradle-versions-plugin website](https://github.com/ben-manes/gradle-versions-plugin) */
     const val gradle_versions_plugin: String =
