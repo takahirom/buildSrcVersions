@@ -1,0 +1,20 @@
+link:#contributors[image:https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square[All
+Contributors]]
+
+
+=== Contributors
+
+Thanks goes to these wonderful people:
+
+[cols="^,^,^,^",options="header",]
+|=======================================================================
+|https://twitter.com/jm_fayard[Jean-Michel Fayard]
+ https://github.com/jmfayard/gradle-kotlin-dsl-libs/commits?author=jmfayard[💻]
+link:#design-jmfayard[🎨] https://github.com/jmfayard/gradle-kotlin-dsl-libs/commits?author=jmfayard[📖]
+|https://www.linkedin.com/in/benmanes[BenManes]
+https://github.com/jmfayard/gradle-kotlin-dsl-libs/commits?author=ben-manes[💻] link:#design-ben-manes[🎨] link:#ideas-ben-manes[🤔]
+|https://github.com/daviddenton[David Denton]
+https://github.com/jmfayard/gradle-kotlin-dsl-libs/issues?q=author%3Adaviddenton[🐛] link:#ideas-daviddenton[🤔]
+|https://github.com/eskatos[Paul Merlin]
+link:#review-eskatos[👀]
+|=======================================================================

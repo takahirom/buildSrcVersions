@@ -7,8 +7,12 @@ import kotlin.String
  *   `$ ./gradlew syncLibs`
  * to update this file */
 object Libs {
+    const val aapt2: String = "com.android.tools.build:aapt2:" + Versions.aapt2
+
     const val com_android_tools_build_gradle: String =
-        "com.android.tools.build:gradle:3.2.1"
+            "com.android.tools.build:gradle:" + Versions.com_android_tools_build_gradle
+
+    const val lint_gradle: String = "com.android.tools.lint:lint-gradle:" + Versions.lint_gradle
 
     /**
      * [gradle-versions-plugin website](https://github.com/ben-manes/gradle-versions-plugin) */
@@ -25,15 +29,6 @@ object Libs {
      * [moshi website](https://github.com/square/moshi) */
     const val com_squareup_moshi_moshi: String =
             "com.squareup.moshi:moshi:" + Versions.com_squareup_moshi_moshi
-
-    /**
-     * [logging-interceptor website](https://github.com/square/okhttp) */
-    const val logging_interceptor: String =
-            "com.squareup.okhttp3:logging-interceptor:" + Versions.com_squareup_okhttp3
-
-    /**
-     * [okhttp website](https://github.com/square/okhttp) */
-    const val okhttp: String = "com.squareup.okhttp3:okhttp:" + Versions.com_squareup_okhttp3
 
     /**
      * [okio website](https://github.com/square/okio/) */

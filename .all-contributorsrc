@@ -1,0 +1,54 @@
+{
+  "projectName": "gradle-kotlin-dsl-libs",
+  "projectOwner": "jmfayard",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "doc/contributors.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "jmfayard",
+      "name": "Jean-Michel Fayard",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/459464?v=4",
+      "profile": "https://twitter.com/jm_fayard",
+      "contributions": [
+        "code",
+        "design",
+        "doc"
+      ]
+    },
+    {
+      "login": "daviddenton",
+      "name": "David Denton",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1679649?v=4",
+      "profile": "https://github.com/daviddenton",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
+    },
+    {
+      "login": "eskatos",
+      "name": "Paul Merlin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/132773?v=4",
+      "profile": "https://github.com/eskatos",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "ben-manes",
+      "name": "Ben Manes",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/378614?v=4",
+      "profile": "https://www.linkedin.com/in/benmanes",
+      "contributions": [
+        "code",
+        "design",
+        "ideas"
+      ]
+    }
+  ]
+}

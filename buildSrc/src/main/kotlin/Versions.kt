@@ -7,6 +7,18 @@ import kotlin.String
  *
  * YOU are responsible for updating manually the dependency version. */
 object Versions {
+    const val aapt2: String =
+            "3.2.1-4818971" // No update information. Is this dependency available on jcenter or mavenCentral?
+
+    const val com_android_tools_build_gradle: String = "3.2.1" 
+
+    const val lint_gradle: String = "26.2.1" 
+            /* Could not find any version that matches com.android.tools.lint:lint-gradle:+.
+            Versions rejected by component selection rules: 26.2.0-alpha01
+            Searched in the following locations:
+              - file:/Users/jmfayard/Dev/android-sdk-macosx/extras/m2repository/com/android/tools/lint/lint-gradle/maven-metadata.xml 
+            .... */
+
     const val gradle_versions_plugin: String = "0.20.0" 
 
     const val com_gradle_build_scan_gradle_plugin: String = "2.0.2" 
@@ -14,8 +26,6 @@ object Versions {
     const val com_gradle_plugin_publish_gradle_plugin: String = "0.10.0" 
 
     const val com_squareup_moshi_moshi: String = "1.7.0" //available: "1.8.0" 
-
-    const val com_squareup_okhttp3: String = "3.12.0" 
 
     const val okio: String = "2.1.0" 
 

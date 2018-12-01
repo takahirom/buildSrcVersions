@@ -1,0 +1,16 @@
+
+include::includes.adoc[]
+
+
+Links:
+
+- {plugin_issues}
+- {plugin_github}
+- {plugin_gradle_portal}
+- {gradle_kotlin_dsl}
+- {gradle_guide_new}
+- {gradle_guide_buidllogic}
+- {medium_puzzle}
+- {medium_protips}
+- {medium_mvp}
+- {devto_readme}
