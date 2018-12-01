@@ -2,59 +2,113 @@
     "current": {
         "dependencies": [
             {
-                "group": "com.github.b3er.rxfirebase",
-                "version": "11.2.0",
-                "projectUrl": "https://github.com/b3er/RxFirebase2",
-                "name": "firebase-database"
+                "group": "com.github.ben-manes",
+                "version": "0.20.0",
+                "projectUrl": "https://github.com/ben-manes/gradle-versions-plugin",
+                "name": "gradle-versions-plugin"
             },
             {
-                "group": "com.github.bumptech.glide",
-                "version": "4.8.0",
-                "projectUrl": "https://github.com/bumptech/glide",
-                "name": "compiler"
-            },
-            {
-                "group": "de.mpicbg.scicomp",
-                "version": "0.10.3",
+                "group": "com.gradle.build-scan",
+                "version": "2.0.2",
                 "projectUrl": null,
-                "name": "krangl"
+                "name": "com.gradle.build-scan.gradle.plugin"
             },
             {
-                "group": "io.fabric.tools",
-                "version": "1.26.1",
+                "group": "com.gradle.plugin-publish",
+                "version": "0.10.0",
                 "projectUrl": null,
-                "name": "gradle"
+                "name": "com.gradle.plugin-publish.gradle.plugin"
+            },
+            {
+                "group": "com.squareup.moshi",
+                "version": "1.8.0",
+                "projectUrl": "https://github.com/square/moshi",
+                "name": "moshi"
+            },
+            {
+                "group": "com.squareup.okhttp3",
+                "version": "3.12.0",
+                "projectUrl": "https://github.com/square/okhttp",
+                "name": "logging-interceptor"
+            },
+            {
+                "group": "com.squareup.okhttp3",
+                "version": "3.12.0",
+                "projectUrl": "https://github.com/square/okhttp",
+                "name": "okhttp"
+            },
+            {
+                "group": "com.squareup.okio",
+                "version": "2.1.0",
+                "projectUrl": "https://github.com/square/okio/",
+                "name": "okio"
+            },
+            {
+                "group": "com.squareup.retrofit2",
+                "version": "2.5.0",
+                "projectUrl": "https://github.com/square/retrofit/",
+                "name": "converter-moshi"
+            },
+            {
+                "group": "com.squareup.retrofit2",
+                "version": "2.5.0",
+                "projectUrl": "https://github.com/square/retrofit/",
+                "name": "retrofit"
             },
             {
                 "group": "jmfayard.github.io.gradle-kotlin-dsl-libs",
-                "version": "0.2.4",
+                "version": "0.2.6",
                 "projectUrl": null,
                 "name": "jmfayard.github.io.gradle-kotlin-dsl-libs.gradle.plugin"
             },
             {
+                "group": "org.gradle.kotlin.kotlin-dsl",
+                "version": "1.0.4",
+                "projectUrl": null,
+                "name": "org.gradle.kotlin.kotlin-dsl.gradle.plugin"
+            },
+            {
                 "group": "org.jetbrains.kotlin",
-                "version": "1.2.71",
+                "version": "1.3.10",
+                "projectUrl": "https://kotlinlang.org/",
+                "name": "kotlin-reflect"
+            },
+            {
+                "group": "org.jetbrains.kotlin",
+                "version": "1.3.10",
+                "projectUrl": "https://kotlinlang.org/",
+                "name": "kotlin-sam-with-receiver"
+            },
+            {
+                "group": "org.jetbrains.kotlin",
+                "version": "1.3.10",
                 "projectUrl": "https://kotlinlang.org/",
                 "name": "kotlin-scripting-compiler-embeddable"
             },
             {
+                "group": "org.jetbrains.kotlin",
+                "version": "1.3.10",
+                "projectUrl": "https://kotlinlang.org/",
+                "name": "kotlin-stdlib-jdk8"
+            },
+            {
                 "group": "org.jetbrains.kotlin.jvm",
-                "version": "1.2.71",
+                "version": "1.3.10",
                 "projectUrl": null,
                 "name": "org.jetbrains.kotlin.jvm.gradle.plugin"
             }
         ],
-        "count": 7
+        "count": 16
     },
     "gradle": {
         "current": {
-            "version": "4.10.2",
+            "version": "5.0",
             "reason": "",
             "isUpdateAvailable": false,
             "isFailure": false
         },
         "nightly": {
-            "version": "5.1-20181015235836+0000",
+            "version": "5.1-20181201000046+0000",
             "reason": "",
             "isUpdateAvailable": true,
             "isFailure": false
@@ -67,7 +121,7 @@
             "isFailure": false
         },
         "running": {
-            "version": "4.10.2",
+            "version": "5.0",
             "reason": "",
             "isUpdateAvailable": false,
             "isFailure": false
@@ -75,64 +129,59 @@
     },
     "exceeded": {
         "dependencies": [
-
+            {
+                "group": "com.squareup",
+                "latest": "0.7.0",
+                "version": "1.0.0-RC1",
+                "projectUrl": "http://github.com/square/kotlinpoet/",
+                "name": "kotlinpoet"
+            }
         ],
-        "count": 0
+        "count": 1
     },
     "outdated": {
         "dependencies": [
             {
-                "group": "com.android.tools.build",
+                "group": "com.squareup.moshi",
                 "available": {
                     "release": null,
-                    "milestone": "3.3.0-alpha13",
+                    "milestone": "1.8.0",
                     "integration": null
                 },
-                "version": "3.2.1",
-                "projectUrl": "https://developer.android.com/studio",
-                "name": "gradle"
+                "version": "1.7.0",
+                "projectUrl": "https://github.com/square/moshi",
+                "name": "moshi"
             },
             {
-                "group": "com.google.firebase",
+                "group": "io.kotlintest",
                 "available": {
                     "release": null,
-                    "milestone": "16.0.3",
+                    "milestone": "3.1.10",
                     "integration": null
                 },
-                "version": "12.0.0",
+                "version": "3.1.9",
+                "projectUrl": "http://www.github.com/kotlintest/kotlintest",
+                "name": "kotlintest-runner-junit5"
+            },
+            {
+                "group": "org.jlleitschuh.gradle.ktlint",
+                "available": {
+                    "release": null,
+                    "milestone": "6.3.1",
+                    "integration": null
+                },
+                "version": "6.3.0",
                 "projectUrl": null,
-                "name": "firebase-database"
-            },
-            {
-                "group": "com.squareup.okio",
-                "available": {
-                    "release": null,
-                    "milestone": "2.1.0",
-                    "integration": null
-                },
-                "version": "2.0.0",
-                "projectUrl": "https://github.com/square/okio/",
-                "name": "okio"
-            },
-            {
-                "group": "io.reactivex.rxjava2",
-                "available": {
-                    "release": null,
-                    "milestone": "2.2.2",
-                    "integration": null
-                },
-                "version": "2.2.0",
-                "projectUrl": "https://github.com/ReactiveX/RxJava",
-                "name": "rxjava"
+                "name": "org.jlleitschuh.gradle.ktlint.gradle.plugin"
             }
         ],
-        "count": 4
+        "count": 3
     },
     "unresolved": {
         "dependencies": [
-
+            
         ],
         "count": 0
     },
-    "count": 11
+    "count": 20
 }
