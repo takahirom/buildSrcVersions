@@ -8,10 +8,11 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             Config.pluginsResolution[requested.id.id]?.let { classpathForRequestedPlugin ->
+                println("""plugins.id("${requested.id.id}") => $classpathForRequestedPlugin""")
                 useModule(classpathForRequestedPlugin)
-            } ?: println("Plugin: " + requested.id.id)
+            }
         }
     }
 }
-rootProject.name = "buildSrdVersions"
-include(":plugin", ":examples:kotlin", ":examples:groovy", ":examples:android")
+rootProject.name = "buildSrcVersions"
+include(":plugin", ":examples:kotlin", ":examples:groovy")
