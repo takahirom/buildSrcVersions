@@ -7,8 +7,6 @@ plugins {
     id("com.gradle.plugin-publish") version "0.10.0"
 }
 
-group = "jmfayard.github.io"
-version = "0.2.6"
 
 gradlePlugin {
     plugins {

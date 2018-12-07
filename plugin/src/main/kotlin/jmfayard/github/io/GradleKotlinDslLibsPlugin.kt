@@ -30,8 +30,19 @@ open class GradleKotlinDslLibsPlugin : Plugin<Project> {
 
 
         project.tasks.create("syncLibs", SyncLibsTask::class) {
+            group = "Build Setup"
             dependsOn(":dependencyUpdates")
             jsonInputPath = benManesVersions.outputDir + "/" + benManesVersions.reportfileName + ".json"
+        }
+
+        project.tasks.create("buildSrcVersions") {
+            group = "Build Setup"
+            val files = listOf("buildSrc/.gitignore", "buildSrc/build.gradle.kts", "buildSrc/src/main/kotlin/Versions.kt", "buildSrc/src/main/kotlin/Libs.kt")
+            val status = files.map { "new" }
+            files.forEachIndexed { i: Int, name: String ->
+                val s = status[i]
+                println("\t$s file: $name")
+            }
         }
 
     }

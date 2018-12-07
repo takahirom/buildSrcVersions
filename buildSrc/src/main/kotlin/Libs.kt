@@ -9,11 +9,6 @@ import kotlin.String
 object Libs {
     const val aapt2: String = "com.android.tools.build:aapt2:" + Versions.aapt2
 
-    const val com_android_tools_build_gradle: String =
-            "com.android.tools.build:gradle:" + Versions.com_android_tools_build_gradle
-
-    const val lint_gradle: String = "com.android.tools.lint:lint-gradle:" + Versions.lint_gradle
-
     /**
      * [gradle-versions-plugin website](https://github.com/ben-manes/gradle-versions-plugin) */
     const val gradle_versions_plugin: String =

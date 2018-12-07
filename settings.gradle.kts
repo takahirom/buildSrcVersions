@@ -2,15 +2,19 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         jcenter()
-        google()
     }
 
     resolutionStrategy {
         eachPlugin {
-            Config.pluginsResolution[requested.id.id]?.let { classpathForRequestedPlugin ->
-                println("""plugins.id("${requested.id.id}") => $classpathForRequestedPlugin""")
-                useModule(classpathForRequestedPlugin)
+            val module = when (requested.id.id) {
+                "kotlin" -> Libs.org_jetbrains_kotlin_jvm_gradle_plugin
+                "org.jetbrains.kotlin.android" -> Libs.org_jetbrains_kotlin_jvm_gradle_plugin
+                "org.jetbrains.kotlin.jvm" -> Libs.org_jetbrains_kotlin_jvm_gradle_plugin
+                "org.jetbrains.kotlin.kapt" -> Libs.org_jetbrains_kotlin_jvm_gradle_plugin
+                else -> return@eachPlugin
             }
+            println("""plugins.id("${requested.id.id}") => $module """)
+            useModule(module)
         }
     }
 }
