@@ -95,11 +95,11 @@ fun kotlinpoet(versions: List<Dependency>, gradleConfig: GradleConfig): KotlinPo
         .build()
 
 
-    val LibsFile = FileSpec.builder("", LibsClassName)
+    val LibsFile = FileSpec.builder("libs", LibsClassName)
         .addType(Libs)
         .build()
 
-    val VersionsFile = FileSpec.builder("", VersionsClassName)
+    val VersionsFile = FileSpec.builder("libs", VersionsClassName)
         .addType(Versions)
         .build()
 
